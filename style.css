@@ -11,7 +11,7 @@ img{display:block;max-width:100%}
 a{color:var(--blue)}
 h1,h2,h3{font-family:var(--f-h);color:var(--ink);margin:0;font-weight:750;letter-spacing:-.01em;font-stretch:96%}
 p{margin:0 0 1em}
-.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.wrap{width:min(1320px,100% - 40px);margin-inline:auto}
 
 /* znak klina z litery A */
 .znak{width:.9em;height:.9em;flex:none;display:inline-block;vertical-align:-.04em;margin-right:.45em}
@@ -28,7 +28,7 @@ p{margin:0 0 1em}
 
 /* nagłówek */
 .top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);height:var(--hh)}
-.top-in{height:100%;width:min(1400px,100% - 40px);margin-inline:auto;display:flex;align-items:center;gap:28px}
+.top-in{height:100%;width:min(1320px,100% - 40px);margin-inline:auto;display:flex;align-items:center;gap:28px}
 .logo{display:flex;align-items:center;gap:14px;text-decoration:none;flex:none}
 .logo svg{width:112px;height:39px;overflow:visible}
 .lg-s,.lg-k{font:italic 900 41px var(--f-h);fill:var(--blue);font-stretch:112%}
