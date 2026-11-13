@@ -4,16 +4,251 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<title>Lokale i biura do wynajęcia w Koszalinie - Sak Sp. z o.o., deweloper Koszalin i Mielno</title>
-<meta name="description" content="Sak Sp. z o.o. od 1992 roku buduje, odnawia i wynajmuje obiekty w Koszalinie i Mielnie. Lokal przy Rynku Staromiejskim, biura przy ul. Zwycięstwa 28, działka inwestycyjna przy ul. Gnieźnieńskiej. Tel. 94 348 08 68.">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230060A0'/%3E%3Cpath d='M12 54L46 10h8L50 54z' fill='%23fff'/%3E%3Cpath d='M30 54l14-18v18z' fill='%23EE6A2A'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,500..800;1,62..125,800..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/zw-front.webp">
-<link rel="stylesheet" href="style.css">
+<title>Lokale i biura na wynajem Koszalin, deweloper Mielno | SAK Sp. z o.o.</title>
+<meta name="description" content="SAK Sp. z o.o. od 1992 roku: budowa lokali na wynajem i sprzedaż w Koszalinie i Mielnie, renowacja obiektów zabytkowych, grunty inwestycyjne. Lokal przy Rynku Staromiejskim, biura przy ul. Zwycięstwa 28.">
+<meta name="theme-color" content="#0061A6">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" type="image/webp" href="img/h-tel-720.webp" imagesrcset="img/h-tel-360.webp 360w, img/h-tel-720.webp 720w" imagesizes="100vw" media="(max-width:899px)">
+<link rel="preload" as="image" type="image/webp" href="img/h-zachod-960.webp" media="(min-width:900px)">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-latin-700-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin-400-normal.woff2" crossorigin>
 <style>
+@font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(fonts/archivo-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+@font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(fonts/archivo-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url(fonts/inter-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url(fonts/inter-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF}
+:root{--blue:#0061A6;--blue-d:#004B82;--navy:#0B2A45;--or:#F55C10;--or-t:#C2470A;--gray:#F1F4F7;--line:#D9E1E8;--txt:#14212E;--mut:#4F5D6B;--hh:64px;--cut:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + 8px);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--txt);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Archivo,Inter,system-ui,sans-serif;font-weight:700;letter-spacing:-.015em;line-height:1.12;margin:0}
+h2{font-size:clamp(30px,3.4vw,46px)}
+h3{font-size:21px;line-height:1.25}
+p{margin:0 0 1em}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:#fff;padding:8px 12px}
+
+/* przycisk: ukośny bok jak litery SAK */
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 34px 0 24px;background:var(--or);color:#fff;font:600 17px/1 Inter,sans-serif;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 16px) 100%,0 100%);transition:background .2s}
+.btn:hover{background:#DC4E08}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn.niebieski{background:var(--blue)}.btn.niebieski:hover{background:var(--blue-d)}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* linia z logo zakończona trójkątem */
+.linia{display:flex;align-items:flex-end;height:14px;margin:18px 0 0}
+.linia::before{content:"";flex:0 0 72px;height:4px;background:var(--blue)}
+.linia::after{content:"";width:12px;height:14px;margin-left:5px;background:var(--or);clip-path:polygon(100% 0,100% 100%,0 100%)}
+.na-ciemnym .linia::before{background:#fff}
+
+/* nagłówek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:block;flex:none;line-height:0}
+.logo svg{height:46px;width:auto}
+.menu{display:flex;gap:4px;margin-left:auto}
+.menu a{position:relative;padding:10px 12px;text-decoration:none;font-weight:600;font-size:16px;color:var(--txt)}
+.menu a:hover{color:var(--blue)}
+.menu a.akt{color:var(--blue)}
+.menu a.akt::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:3px;background:var(--blue)}
+.tel{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;color:var(--blue);white-space:nowrap}
+.tel svg{width:20px;height:20px}
+.burger{display:none}
+
+/* pierwszy ekran */
+.hero{position:relative;margin-top:var(--hh);min-height:calc(100svh - var(--hh));display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:var(--navy);overflow:hidden}
+.pas{position:absolute;inset:0;margin:0}
+.pas img{position:absolute;top:0;height:100%;object-fit:cover;max-width:none}
+.pas.p2 img{inset:0;width:100%;object-position:50% 30%}
+.pas.p1,.pas.p3,.rog{display:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,42,69,0) 30%,rgba(11,42,69,.55) 58%,rgba(8,30,50,.88) 100%);pointer-events:none}
+.hero-in{position:relative;z-index:2;padding:40px 0 34px}
+.hero h1{font-size:clamp(33px,9.2vw,44px);max-width:15ch;text-wrap:balance}
+.hero p.lead{font-size:17px;line-height:1.5;margin:16px 0 26px;max-width:46ch;color:#E8EEF4}
+.hero .gdzie{margin:20px 0 0;font-size:15px;color:#C9D6E2}
+
+@media (min-width:900px){
+  .pas.p1,.pas.p3,.rog{display:block}
+  .hero{background:#fff}
+  .pas.p1{clip-path:polygon(0 0,40% 0,30% 100%,0 100%)}
+  .pas.p2{clip-path:polygon(40.5% 0,73.5% 0,63.5% 100%,30.5% 100%)}
+  .pas.p3{clip-path:polygon(74% 0,100% 0,100% 100%,64% 100%)}
+  .pas.p1 img{left:0;width:40%;object-position:40% 50%}
+  .pas.p2 img{inset:0 auto auto 30.5%;width:43%;object-position:50% 40%}
+  .pas.p3 img{left:64%;width:36%;object-position:30% 50%}
+  .hero::after{background:linear-gradient(90deg,rgba(8,30,50,.82) 0%,rgba(8,30,50,.55) 38%,rgba(8,30,50,0) 62%),linear-gradient(0deg,rgba(8,30,50,.55),rgba(8,30,50,0) 45%)}
+  .hero{justify-content:center}
+  .hero-in{padding:56px 0}
+  .hero h1{font-size:clamp(46px,4.3vw,72px);max-width:13ch}
+  .hero p.lead{font-size:19px;max-width:40ch;margin:22px 0 32px}
+  .rog{position:absolute;z-index:3;bottom:0;left:30.5%;width:28px;height:38px;background:var(--or);clip-path:polygon(0 100%,100% 0,100% 100%);transform:translateX(-100%)}
+}
+
+/* sekcje */
+section{padding:clamp(64px,8vw,112px) 0}
+section.hero{padding:0}
+.szara{background:var(--gray)}
+.glowa{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(32px,4vw,52px)}
+.glowa p{max-width:52ch;margin:0;color:var(--mut)}
+
+/* karuzela zdjęć w karcie */
+.kar{position:relative;overflow:hidden;background:#D5DEE6;clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - var(--cut)) 100%,0 100%)}
+.kar-tor{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;touch-action:pan-x pan-y;overscroll-behavior-x:contain}
+.kar-tor::-webkit-scrollbar{display:none}
+.kar-tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.kar-tor img{flex:0 0 100%;width:100%;aspect-ratio:4/3;object-fit:cover;scroll-snap-align:start;user-select:none;-webkit-user-drag:none}
+.kar.szer .kar-tor img{aspect-ratio:16/9}
+.kar button{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border:0;background:rgba(255,255,255,.92);color:var(--navy);cursor:pointer;opacity:0;transition:opacity .2s;display:grid;place-items:center}
+.kar button svg{width:18px;height:18px}
+.kar .wst{left:0;clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.kar .dal{right:0}
+.kar:hover button,.kar button:focus-visible{opacity:1}
+.kar .licz{position:absolute;left:12px;bottom:12px;padding:3px 9px;background:rgba(11,42,69,.8);color:#fff;font-size:13px;font-weight:600}
+@media (hover:none){.kar button{display:none}}
+
+/* oferta */
+.oferty{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.oferta{background:#fff;display:flex;flex-direction:column;min-width:0}
+.oferta .tresc{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.oferta .gdzie{font-size:15px;color:var(--mut);margin:6px 0 16px}
+.dane{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0 0 16px;font-size:16px}
+.dane dt{color:var(--mut)}
+.dane dd{margin:0;font-weight:600;text-align:right}
+.dane dd.cena{color:var(--blue);font-family:Archivo,sans-serif;font-size:19px}
+.oferta p.opis{font-size:15.5px;color:var(--mut);line-height:1.55}
+.oferta .btn{margin-top:auto;align-self:flex-start}
+.dzialka{aspect-ratio:4/3;background:#E6ECF1;clip-path:polygon(0 0,100% 0,100% calc(100% - 28px),calc(100% - var(--cut)) 100%,0 100%)}
+.dzialka svg{width:100%;height:100%}
+
+/* inwestycje */
+.inw{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 28px}
+.inw article{min-width:0}
+.inw .w2{grid-column:span 2}
+.inw .meta{display:flex;align-items:center;gap:10px;margin:18px 0 6px;font-size:15px;color:var(--mut);font-weight:600}
+.inw .meta::before{content:"";width:10px;height:12px;background:var(--or);clip-path:polygon(100% 0,100% 100%,0 100%)}
+.inw p{font-size:16px;color:var(--mut);margin:8px 0 0;max-width:60ch}
+.wiecej{display:none}
+
+/* jak budujemy (sekcja niebieska) */
+.na-ciemnym{background:var(--blue);color:#fff}
+.na-ciemnym .glowa p{color:#DCE8F3}
+.etap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:28px 48px;padding:40px 0;border-top:1px solid rgba(255,255,255,.28)}
+.etap:last-child{padding-bottom:0}
+.etap h3{font-size:26px}
+.etap p{color:#E3EDF6;font-size:16.5px;margin-top:12px}
+.kroki{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;margin:0;padding:0;position:relative}
+.kroki li{min-width:0}
+.kroki img{width:100%;aspect-ratio:4/3;object-fit:cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 22px),calc(100% - 16px) 100%,0 100%)}
+.kroki .kiedy{display:flex;align-items:center;gap:8px;margin-top:12px;font-weight:600;font-size:15.5px}
+.kroki .kiedy::before{content:"";width:10px;height:12px;background:var(--or);clip-path:polygon(100% 0,100% 100%,0 100%);flex:none}
+.kroki span.co{display:block;font-size:15px;color:#DCE8F3}
+
+/* o firmie */
+.firma{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px 72px;align-items:start}
+.firma blockquote{margin:28px 0;padding:0 0 0 24px;border-left:4px solid var(--blue);font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(21px,2vw,26px);line-height:1.35;color:var(--navy)}
+.firma blockquote cite{display:block;margin-top:12px;font:400 15px/1.4 Inter,sans-serif;color:var(--mut);font-style:normal}
+.fakty{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.fakty li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+.fakty b{font-weight:600;color:var(--mut)}
+.firma figure{margin:0}
+.firma figure img{width:100%;aspect-ratio:4/3;object-fit:cover;clip-path:polygon(0 0,100% 0,100% calc(100% - 34px),calc(100% - 25px) 100%,0 100%)}
+.firma figcaption{font-size:14px;color:var(--mut);margin-top:10px}
+.szklo{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;align-items:center;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+.szklo img{width:200px;aspect-ratio:400/270;object-fit:contain;background:#fff}
+.szklo h3{margin-bottom:8px}
+.szklo p{margin:0;font-size:16px;color:var(--mut)}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px 64px}
+.adr{font-style:normal;font-size:17px}
+.adr h3{margin:0 0 10px}
+.adr p{margin:0 0 6px}
+.adr a{text-decoration:none;font-weight:600;color:var(--blue)}
+.adr a:hover{text-decoration:underline}
+.adr .druga{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);font-size:16px}
+form{background:#fff;padding:clamp(22px,3vw,36px);align-self:start}
+form h3{margin-bottom:18px}
+.pole{display:grid;gap:6px;margin-bottom:16px}
+.pole label{font-weight:600;font-size:15px}
+.pole input,.pole select,.pole textarea{width:100%;font:400 16px/1.4 Inter,sans-serif;padding:12px 14px;border:1px solid #B9C6D2;background:#fff;color:var(--txt);border-radius:0}
+.pole input:focus,.pole select:focus,.pole textarea:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue)}
+.pole textarea{min-height:110px;resize:vertical}
+.dwa{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.info{margin:14px 0 0;font-size:15px;color:var(--blue-d);font-weight:600;min-height:1.4em}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#DCE4EB;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* stopka */
+footer{background:var(--navy);color:#BFCCD8;padding:56px 0 28px;font-size:15.5px}
+.st{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+.st h4{margin:0 0 10px;color:#fff;font:600 16px/1.3 Inter,sans-serif}
+.st p{margin:0 0 4px}
+.st a{text-decoration:none}.st a:hover{color:#fff}
+.st ul{list-style:none;margin:0;padding:0}.st li{margin:0 0 4px}
+.st .logo svg{height:52px}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:14px}
+
+/* pasek telefonu po przewinięciu */
+.mob{display:none}
+
+@media (max-width:1100px){
+  .menu a{padding:10px 8px;font-size:15px}
+  .top .wrap{gap:18px}
+}
+@media (max-width:899px){
+  :root{--hh:60px}
+  .menu{position:fixed;inset:var(--hh) 0 auto;flex-direction:column;gap:0;background:#fff;padding:8px 20px 24px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(11,42,69,.12);transform:translateY(-120%);visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
+  .menu.otw{transform:none;visibility:visible;transition:transform .25s ease}
+  .menu a{padding:14px 0;font-size:19px;border-bottom:1px solid var(--line)}
+  .menu a.akt::after{left:auto;right:0;top:50%;bottom:auto;width:10px;height:12px;margin-top:-6px;background:var(--or);clip-path:polygon(100% 0,100% 100%,0 100%)}
+  .logo svg{height:38px}
+  .tel{margin-left:auto}
+  .tel span{display:none}
+  .tel{width:44px;height:44px;justify-content:center;background:var(--gray)}
+  .burger{display:grid;place-items:center;width:44px;height:44px;border:0;background:var(--blue);color:#fff;cursor:pointer;padding:0}
+  .burger svg{width:22px;height:22px}
+  .top .wrap{gap:10px}
+  .oferty{grid-template-columns:minmax(0,1fr);gap:24px}
+  .inw{grid-template-columns:minmax(0,1fr);gap:40px}
+  .inw .w2{grid-column:auto}
+  .inw .ukr{display:none}
+  .inw.wszystkie .ukr{display:block}
+  .wiecej{display:inline-flex;margin-top:36px}
+  .inw.wszystkie + .wiecej{display:none}
+  .kar.szer .kar-tor img{aspect-ratio:4/3}
+  .etap{grid-template-columns:minmax(0,1fr);gap:20px;padding:32px 0}
+  .kroki{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-20px;padding-right:20px;scrollbar-width:none}
+  .kroki::-webkit-scrollbar{display:none}
+  .kroki li{flex:0 0 78%;scroll-snap-align:start}
+  .firma,.kontakt{grid-template-columns:minmax(0,1fr)}
+  .fakty li{grid-template-columns:118px minmax(0,1fr);gap:12px;padding:11px 0;font-size:15.5px}
+  .firma figure{display:none}
+  .oferta .kar-tor img{aspect-ratio:3/2}
+  .dzialka{aspect-ratio:16/9}
+  .firma blockquote{font-size:19px;margin:22px 0}
+  .st .nawig{display:none}
+  .inw .ukr-m{display:none}
+  .inw.wszystkie .ukr-m{display:block}
+  .szklo{grid-template-columns:minmax(0,1fr)}
+  .st{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .st .pierwsza{grid-column:1/-1}
+  .mob{display:grid;grid-template-columns:1fr 1fr;position:fixed;inset:auto 0 0;z-index:40;transform:translateY(110%);transition:transform .25s ease;padding-bottom:env(safe-area-inset-bottom);background:var(--navy)}
+  .mob.widac{transform:none}
+  .mob a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;color:#fff;font-weight:600;text-decoration:none}
+  .mob a+a{background:var(--or)}
+  .mob svg{width:18px;height:18px}
+  footer{padding-bottom:92px}
+}
+@media (max-width:480px){
+  .dwa{grid-template-columns:minmax(0,1fr)}
+  .hero .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
 .wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
 .wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
 .wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
@@ -25,312 +260,359 @@
 .wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
 @media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"SAK Sp. z o.o.","foundingDate":"1992","telephone":"+48943480868","faxNumber":"+48943480867","email":"sak@sak.com.pl","address":{"@type":"PostalAddress","streetAddress":"ul. Zwycięstwa 28/7","postalCode":"75-037","addressLocality":"Koszalin","addressCountry":"PL"},"areaServed":["Koszalin","Mielno"],"url":"https://sak.com.pl/"}
+</script>
 </head>
 <body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="klin" viewBox="0 0 40 40"><path d="M2 38L33 2h5v36z" fill="#0060A0"/><path d="M19 38l13-15v15z" fill="#EE6A2A"/></symbol>
-  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm18 2-10 7L2 6"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <defs>
+    <symbol id="sak" viewBox="150 40 625 210">
+      <path fill="currentColor" d="M462 50L345 50C328 50 312 56 300 70C284 90 282 115 290 140C294 152 292 163 278 163L210 163L165 213L300 213C350 210 372 175 366 145C362 128 362 112 378 96C395 78 430 64 462 50Z"/>
+      <path fill="currentColor" d="M343 213L475 51L549 51L549 213L482 213L482 146L419 213Z"/>
+      <path fill="var(--trojkat,#F55C10)" d="M436 213L473 172L473 213Z"/>
+      <path fill="currentColor" d="M555 131L632 213L718 213L655 140L762 50L673 50Z"/>
+      <rect fill="currentColor" x="163" y="234" width="599" height="10"/>
+    </symbol>
+  </defs>
 </svg>
 
-<header class="top" id="top">
-  <div class="top-in">
-    <a class="logo" href="#top" aria-label="SAK Promotor - strona główna">
-      <svg viewBox="0 0 168 58" role="img" aria-hidden="true">
-        <text x="0" y="36" class="lg-s">S</text>
-        <path d="M27 36L55 3h7l-3 33z" fill="#0060A0"/>
-        <path d="M43 36l12-14-1.6 14z" fill="#EE6A2A"/>
-        <text x="58" y="36" class="lg-k">K</text>
-        <rect x="2" y="42" width="98" height="2.6" fill="#0060A0"/>
-        <text x="2" y="56" class="lg-p">PROMOTOR</text>
-      </svg>
-      <span class="logo-firma">Sak Sp. z o.o.<br>Koszalin · Mielno</span>
-    </a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="SAK Sp. z o.o. - strona główna"><svg viewBox="150 40 625 210" style="color:#0061A6"><use href="#sak"/></svg></a>
     <nav class="menu" id="menu" aria-label="Menu główne">
-      <a href="#oferta">Oferta</a>
-      <a href="#zwyciestwa">Jak budujemy</a>
-      <a href="#realizacje">Realizacje</a>
+      <a href="#oferta">Aktualna oferta</a>
+      <a href="#inwestycje">Inwestycje</a>
+      <a href="#jak-budujemy">Jak budujemy</a>
       <a href="#o-firmie">O firmie</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-    <a class="top-tel" href="tel:+48943480868"><svg><use href="#i-tel"/></svg><span>94 348 08 68</span></a>
-    <a class="btn btn-mini" href="#kontakt">Zapytaj o lokal</a>
-    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <a class="tel" href="tel:+48943480868" aria-label="Zadzwoń: 94 348 08 68"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>94 348 08 68</span></a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h12"/></svg></button>
   </div>
 </header>
 
-<main>
-<section class="hero" aria-labelledby="h1">
-  <div class="tryptyk">
-    <figure class="p p1"><img src="img/zw-front.webp" alt="Budynek Sak przy ul. Zwycięstwa 28 w Koszalinie, kamienna elewacja w pierzei kamienic" fetchpriority="high"><figcaption>Zwycięstwa 28, Koszalin</figcaption></figure>
-    <figure class="p p2"><img src="img/zachod-2.webp" alt="Apartamentowiec Zachód Słońca przy promenadzie w Mielnie"><figcaption>Zachód Słońca, Mielno</figcaption></figure>
-    <figure class="p p3"><img src="img/meduza-1.webp" alt="Hotel Meduza w Mielnie, zabytkowy budynek odnowiony przez Sak"><figcaption>Meduza, Mielno</figcaption></figure>
+<main id="tresc">
+<section class="hero" id="start" aria-label="SAK Sp. z o.o.">
+  <figure class="pas p1"><img src="img/h-nadbrzezna-960.webp" srcset="img/h-nadbrzezna-640.webp 640w, img/h-nadbrzezna-960.webp 960w" sizes="40vw" width="960" height="720" alt="Budynek apartamentowy przy ul. Nadbrzeżnej w Mielnie" loading="lazy" decoding="async"></figure>
+  <figure class="pas p2"><picture>
+    <source media="(min-width:900px)" srcset="img/h-zachod-640.webp 640w, img/h-zachod-960.webp 960w" sizes="43vw">
+    <img src="img/h-tel-720.webp" srcset="img/h-tel-360.webp 360w, img/h-tel-720.webp 720w" sizes="100vw" width="720" height="960" alt="Budynek apartamentowy Zachód Słońca przy promenadzie w Mielnie" fetchpriority="high" decoding="async">
+  </picture></figure>
+  <figure class="pas p3"><img src="img/h-swietlik-960.webp" srcset="img/h-swietlik-640.webp 640w, img/h-swietlik-960.webp 960w" sizes="36vw" width="960" height="639" alt="Ogród zimowy pod przeszklonym świetlikiem w hotelu Meduza w Mielnie" loading="lazy" decoding="async"></figure>
+  <span class="rog" aria-hidden="true"></span>
+  <div class="wrap hero-in">
+    <h1>Budujemy tak, żeby pasowało do miejsca</h1>
+    <p class="lead">Lokale i biura na wynajem i sprzedaż w Koszalinie, renowacja obiektów zabytkowych i grunty inwestycyjne. Od 1992 roku.</p>
+    <a class="btn" href="#oferta">Zobacz aktualną ofertę <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 8h11M9 3l5 5-5 5"/></svg></a>
+    <p class="gdzie">Biuro deweloperskie: Koszalin, ul. Zwycięstwa 28/7</p>
   </div>
-  <div class="pasmo">
-    <div class="wrap pasmo-in">
-      <h1 id="h1">Nowe budynki, które pasują do&nbsp;starych ulic</h1>
-      <div class="pasmo-txt">
-        <p class="lead">Od 1992 roku budujemy, odnawiamy i wynajmujemy obiekty w Koszalinie i Mielnie. Teraz do wynajęcia: lokal przy Rynku Staromiejskim i biura przy ul.&nbsp;Zwycięstwa.</p>
-        <div class="cta"><a class="btn" href="#oferta" id="heroCta">Zobacz aktualną ofertę</a><a class="lnk" href="tel:+48943480868">lub zadzwoń: 94 348 08 68</a></div>
+</section>
+
+<section class="szara" id="oferta">
+  <div class="wrap">
+    <div class="glowa">
+      <div><h2>Aktualna oferta</h2><div class="linia"></div></div>
+      <p>Lokal w centrum, biura w nowym budynku przy ul. Zwycięstwa i działka przy trasie na Poznań. Wszystkie do obejrzenia po wcześniejszym telefonie.</p>
+    </div>
+    <div class="oferty">
+      <article class="oferta">
+        <div class="kar" data-kar>
+          <div class="kar-tor">
+            <img src="img/rynek-1.webp" width="640" height="480" alt="Lokal przy Rynku Staromiejskim w Koszalinie, widok z bliska" loading="lazy" decoding="async">
+            <img src="img/rynek-2.webp" width="640" height="480" alt="Lokal przy Rynku Staromiejskim, widok z dystansu" loading="lazy" decoding="async">
+            <img src="img/rzut-1.webp" width="1000" height="615" alt="Rzut parteru lokalu" loading="lazy" decoding="async" style="object-fit:contain;background:#fff">
+            <img src="img/rzut-2.webp" width="1000" height="707" alt="Rysunek techniczny frontu lokalu" loading="lazy" decoding="async" style="object-fit:contain;background:#fff">
+          </div>
+        </div>
+        <div class="tresc">
+          <h3>Lokal przy Rynku Staromiejskim</h3>
+          <p class="gdzie">Koszalin, ścisłe centrum, obok Ratusza</p>
+          <dl class="dane">
+            <dt>Powierzchnia</dt><dd>180 m² + piwnice 150 m²</dd>
+            <dt>Sprzedaż</dt><dd class="cena">2 520 000 zł</dd>
+            <dt>Wynajem</dt><dd class="cena">13 500 zł / mies.</dd>
+          </dl>
+          <p class="opis">Gruntownie zmodernizowany, przez lata oddział banku. Sejf bankowy, podjazd dla wózków, przystanek i miejskie parkingi przy wejściu. Dostępny od zaraz.</p>
+          <a class="btn niebieski" href="#kontakt" data-temat="Lokal przy Rynku Staromiejskim">Zapytaj o lokal</a>
+        </div>
+      </article>
+      <article class="oferta">
+        <div class="kar" data-kar>
+          <div class="kar-tor">
+            <img src="img/biuro-1.webp" width="640" height="480" alt="Budynek biurowy przy ul. Zwycięstwa 28 w Koszalinie" loading="lazy" decoding="async">
+            <img src="img/zwyc-2.webp" width="640" height="480" alt="Kamienna elewacja budynku przy ul. Zwycięstwa 28" loading="lazy" decoding="async">
+            <img src="img/biuro-2.webp" width="480" height="640" alt="Tylna elewacja z tarasem" loading="lazy" decoding="async">
+            <img src="img/biuro-3.webp" width="480" height="640" alt="Tylna elewacja budynku przy ul. Zwycięstwa 28" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="tresc">
+          <h3>Biura przy ul. Zwycięstwa 28</h3>
+          <p class="gdzie">Koszalin, centrum, przy głównej ulicy</p>
+          <dl class="dane">
+            <dt>III piętro, z tarasem</dt><dd>115 m²</dd>
+            <dt></dt><dd class="cena">3 910 zł / mies.</dd>
+            <dt>II piętro</dt><dd>88 m²</dd>
+            <dt></dt><dd class="cena">2 992 zł / mies.</dd>
+          </dl>
+          <p class="opis">Nowy budynek biurowy z windą i dwoma wejściami, na parterze bank. Stawka 34 zł za m².</p>
+          <a class="btn niebieski" href="#kontakt" data-temat="Biura przy ul. Zwycięstwa 28">Zapytaj o biuro</a>
+        </div>
+      </article>
+      <article class="oferta">
+        <div class="dzialka" aria-hidden="true">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+            <rect width="400" height="300" fill="#E6ECF1"/>
+            <path d="M0 238 L400 196" stroke="#fff" stroke-width="26"/>
+            <path d="M0 238 L400 196" stroke="#B9C6D2" stroke-width="1.5" stroke-dasharray="10 9"/>
+            <path d="M120 58 L268 44 L292 176 L104 196 Z" fill="#fff" stroke="#0061A6" stroke-width="4"/>
+            <path d="M268 176 L292 176 L292 150 Z" fill="#F55C10"/>
+            <text x="196" y="128" text-anchor="middle" font-family="Archivo,Inter,sans-serif" font-weight="700" font-size="30" fill="#0B2A45">1100 m²</text>
+            <text x="60" y="270" font-family="Inter,sans-serif" font-weight="600" font-size="14" fill="#4F5D6B">ul. Gnieźnieńska, w stronę Poznania</text>
+          </svg>
+        </div>
+        <div class="tresc">
+          <h3>Działka pod inwestycję gospodarczą</h3>
+          <p class="gdzie">Koszalin, ul. Gnieźnieńska, przy CH Forum</p>
+          <dl class="dane">
+            <dt>Powierzchnia</dt><dd>1100 m²</dd>
+            <dt>Cena</dt><dd class="cena">290 000 zł</dd>
+          </dl>
+          <p class="opis">Przy głównej trasie na Poznań. W sąsiedztwie salon Toyoty, hurtownia weterynaryjna, warsztat Volvo i hale sklepu meblowego.</p>
+          <a class="btn niebieski" href="#kontakt" data-temat="Działka przy ul. Gnieźnieńskiej">Zapytaj o działkę</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="inwestycje">
+  <div class="wrap">
+    <div class="glowa">
+      <div><h2>Zrealizowane inwestycje</h2><div class="linia"></div></div>
+      <p>Nasze budynki najlepiej ocenić na miejscu: w Mielnie, przy promenadzie i na wydmach, oraz w centrum Koszalina.</p>
+    </div>
+    <div class="inw" id="inw">
+      <article class="w2">
+        <div class="kar szer" data-kar><div class="kar-tor">
+          <img src="img/meduza-1.webp" width="640" height="480" alt="Hotel Restauracja Meduza w Mielnie" loading="lazy" decoding="async">
+          <img src="img/meduza-2.webp" width="640" height="480" alt="Meduza od strony ulicy Nadbrzeżnej" loading="lazy" decoding="async">
+          <img src="img/meduza-3.webp" width="640" height="480" alt="Balkon z kwiatami w hotelu Meduza" loading="lazy" decoding="async">
+          <img src="img/meduza-4.webp" width="640" height="480" alt="Wejście do restauracji Meduza wieczorem" loading="lazy" decoding="async">
+          <img src="img/meduza-5.webp" width="640" height="480" alt="Zabytkowe samochody przed hotelem Meduza" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Mielno, 1997</p>
+        <h3>Meduza*** Hotel Restauracja</h3>
+        <p>Zabytkowy budynek z początku XX wieku w stylu szwajcarskiego renesansu. Gruntowny remont z zachowaniem pierwotnej bryły i przebudowa na hotel z restauracją.</p>
+      </article>
+      <article class="ukr-m">
+        <div class="kar" data-kar><div class="kar-tor">
+          <img src="img/nadbrzezna-1.webp" width="640" height="480" alt="Budynek apartamentowy przy ul. Nadbrzeżnej w Mielnie" loading="lazy" decoding="async">
+          <img src="img/nadbrzezna-2.webp" width="640" height="480" alt="Pierzeja ul. Nadbrzeżnej w Mielnie" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Mielno, 2000-2001</p>
+        <h3>Budynek apartamentowy przy ul. Nadbrzeżnej</h3>
+        <p>Nietuzinkowa architektura i charakterystyczna elewacja. 1. miejsce i tytuł "Mister Roku 2001".</p>
+      </article>
+      <article>
+        <div class="kar" data-kar><div class="kar-tor">
+          <img src="img/zachod-1.webp" width="640" height="480" alt="Zachód Słońca, wykusze z muru pruskiego" loading="lazy" decoding="async">
+          <img src="img/zachod-2.webp" width="640" height="480" alt="Zachód Słońca od strony promenady" loading="lazy" decoding="async">
+          <img src="img/zachod-3.webp" width="640" height="480" alt="Arkady i schody budynku Zachód Słońca" loading="lazy" decoding="async">
+          <img src="img/zachod-4.webp" width="640" height="480" alt="Zachód Słońca zimą" loading="lazy" decoding="async">
+          <img src="img/zachod-5.webp" width="640" height="480" alt="Elewacja Zachodu Słońca z wieżą" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Mielno, 2004-2006</p>
+        <h3>"Zachód Słońca"</h3>
+        <p>Apartamentowiec przy nadmorskiej promenadzie. Nowoczesny projekt z elewacją, która przypomina stare kamienice.</p>
+      </article>
+      <article>
+        <div class="kar" data-kar><div class="kar-tor">
+          <img src="img/basen-1.webp" width="640" height="480" alt="Kryty basen w hotelu Meduza" loading="lazy" decoding="async">
+          <img src="img/basen-2.webp" width="640" height="480" alt="Basen z kolumnami w hotelu Meduza" loading="lazy" decoding="async">
+          <img src="img/basen-3.webp" width="640" height="480" alt="Niecka basenu w hotelu Meduza" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Mielno, 2005-2007</p>
+        <h3>Basen w hotelu Meduza***</h3>
+        <p>Basen poniżej poziomu morza w hotelu stojącym na wydmach. Kryty, z podgrzewaną wodą.</p>
+      </article>
+      <article class="ukr">
+        <div class="kar" data-kar><div class="kar-tor">
+          <img src="img/swietlik-1.webp" width="640" height="426" alt="Ogród zimowy pod świetlikiem w hotelu Meduza" loading="lazy" decoding="async">
+          <img src="img/swietlik-2.webp" width="640" height="427" alt="Dziedziniec pod przeszkleniem w hotelu Meduza" loading="lazy" decoding="async">
+          <img src="img/swietlik-3.webp" width="640" height="480" alt="Konstrukcja stalowa świetlika w trakcie budowy" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Mielno, do 2007</p>
+        <h3>Świetlik w hotelu Meduza***</h3>
+        <p>Otwarty dziedziniec zamieniony w ogród zimowy. Duże przeszklenie bez dodatkowych słupów, nad nowym basenem.</p>
+      </article>
+      <article class="w2 ukr">
+        <div class="kar szer" data-kar><div class="kar-tor">
+          <img src="img/zwyc-1.webp" width="640" height="480" alt="Budynek handlowo-usługowy przy ul. Zwycięstwa 28 w Koszalinie" loading="lazy" decoding="async">
+          <img src="img/zwyc-2.webp" width="640" height="480" alt="Kamienna elewacja przy ul. Zwycięstwa 28" loading="lazy" decoding="async">
+          <img src="img/zwyc-3.webp" width="640" height="480" alt="Wizualizacja frontu budynku przy ul. Zwycięstwa" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Koszalin, 2007-2008</p>
+        <h3>Budynek handlowo-usługowy przy ul. Zwycięstwa 28</h3>
+        <p>Nowy budynek w miejscu dawnej restauracji Bałtyk, dopasowany do sąsiednich kamienic. Kamienna elewacja, witryna na całą szerokość, winda KONE, na piętrach biura.</p>
+      </article>
+      <article class="ukr">
+        <div class="kar" data-kar><div class="kar-tor">
+          <img src="img/hala-1.webp" width="640" height="480" alt="Hala Sak Textilia w Koszalinie, przeszklona część biurowa" loading="lazy" decoding="async">
+          <img src="img/hala-2.webp" width="640" height="480" alt="Hala Sak Textilia od strony drogi" loading="lazy" decoding="async">
+          <img src="img/hala-3.webp" width="640" height="480" alt="Wejście do hali Sak Textilia" loading="lazy" decoding="async">
+        </div></div>
+        <p class="meta">Koszalin, 1995</p>
+        <h3>Hala Sak Textilia</h3>
+        <p>Hala magazynowa wysokiego składowania z częścią biurową, 1100 m², przy trasie na Poznań i Warszawę.</p>
+      </article>
+    </div>
+    <button class="btn niebieski wiecej" id="wiecej" type="button">Pokaż wszystkie 7 inwestycji</button>
+  </div>
+</section>
+
+<section class="na-ciemnym" id="jak-budujemy">
+  <div class="wrap">
+    <div class="glowa">
+      <div><h2>Jak budujemy</h2><div class="linia"></div></div>
+      <p>Dwie budowy, które dobrze pokazują nasz sposób pracy. Zdjęcia z kolejnych etapów, prosto z placu budowy.</p>
+    </div>
+    <div class="etap">
+      <div>
+        <h3>Zwycięstwa 28, Koszalin</h3>
+        <p>Stara kamienica po restauracji Bałtyk nie nadawała się do remontu. Rozebraliśmy ją i postawiliśmy nowy budynek, który wpisuje się w rząd sąsiednich kamienic.</p>
+      </div>
+      <ol class="kroki">
+        <li><img src="img/proc-rozbiorka-420.webp" width="420" height="315" alt="Rozbiórka starego budynku przy ul. Zwycięstwa" loading="lazy" decoding="async"><span class="kiedy">marzec 2007</span><span class="co">rozbiórka</span></li>
+        <li><img src="img/proc-budowa-420.webp" width="420" height="315" alt="Budowa nowego budynku przy ul. Zwycięstwa" loading="lazy" decoding="async"><span class="kiedy">luty 2008</span><span class="co">budowa</span></li>
+        <li><img src="img/zwyc-1-420.webp" width="420" height="315" alt="Gotowy budynek przy ul. Zwycięstwa 28" loading="lazy" decoding="async"><span class="kiedy">czerwiec 2008</span><span class="co">prace wykończeniowe</span></li>
+      </ol>
+    </div>
+    <div class="etap">
+      <div>
+        <h3>Basen w Meduzie, Mielno</h3>
+        <p>Hotel stoi na wydmach, a basen zaprojektowano poniżej poziomu morza. Do budowy wykorzystano iniekcję strumieniową, autorskie rozwiązanie firmy Keller Polska.</p>
+      </div>
+      <ol class="kroki">
+        <li><img src="img/proc-basen-roboty-420.webp" width="420" height="315" alt="Wykop pod basen przy hotelu Meduza" loading="lazy" decoding="async"><span class="kiedy">styczeń - maj 2006</span><span class="co">roboty budowlane</span></li>
+        <li><img src="img/proc-podbasenie-420.webp" width="420" height="315" alt="Technika basenowa w podbaseniu" loading="lazy" decoding="async"><span class="kiedy">podbasenie</span><span class="co">filtry i technika basenu</span></li>
+        <li><img src="img/basen-1-420.webp" width="420" height="315" alt="Gotowy kryty basen w hotelu Meduza" loading="lazy" decoding="async"><span class="kiedy">kwiecień 2008</span><span class="co">basen kryty z podgrzewaną wodą</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="o-firmie">
+  <div class="wrap">
+    <div class="firma">
+      <div>
+        <h2>O firmie</h2><div class="linia"></div>
+        <p style="margin-top:28px">SAK Sp. z o.o. działa od 1992 roku na rynku Koszalina i okolic. Budujemy lokale i mieszkania na wynajem i sprzedaż w dobrych lokalizacjach, odnawiamy obiekty zabytkowe oraz szukamy i kupujemy grunty pod kolejne inwestycje.</p>
+        <blockquote>"Dokładamy wszelkich starań, aby nasze inwestycje były nowoczesne na miarę Europy, funkcjonalne, stylowe i eleganckie oraz dobrze wkomponowane w otoczenie."<cite>SAK Sp. z o.o.</cite></blockquote>
+        <ul class="fakty">
+          <li><b>Od</b><span>1992 roku</span></li>
+          <li><b>Siedziba spółki</b><span>Mielno, ul. Nadbrzeżna 2</span></li>
+          <li><b>Biuro zarządu</b><span>Koszalin, ul. Zwycięstwa 28/7, w naszym najnowszym budynku</span></li>
+          <li><b>Zakres</b><span>budowa na wynajem i sprzedaż, renowacja zabytków, grunty inwestycyjne</span></li>
+        </ul>
+      </div>
+      <figure>
+        <img src="img/meduza-2.webp" width="640" height="480" alt="Hotel Meduza w Mielnie, budynek odnowiony przez SAK" loading="lazy" decoding="async">
+        <figcaption>Meduza w Mielnie, zabytkowy budynek z początku XX wieku po remoncie</figcaption>
+      </figure>
+    </div>
+    <div class="szklo">
+      <img src="img/szklo.webp" width="400" height="270" alt="Kieliszki Helicium projektu Arnauda Baratte'a" loading="lazy" decoding="async">
+      <div>
+        <h3>Szkło degustacyjne Helicium</h3>
+        <p>Prowadzimy też sprzedaż francuskiego szkła Helicium projektu Arnauda Baratte'a: kieliszki do wina 33 i 53 cl, do szampana 28 cl i szkło do mocnych trunków 36 cl. Odporne na uderzenia, do mycia w zmywarce. Tel. <a href="tel:+48606646105">606 646 105</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sek oferta" id="oferta" aria-labelledby="h-oferta">
+<section class="szara" id="kontakt">
   <div class="wrap">
     <div class="glowa">
-      <h2 id="h-oferta"><svg class="znak"><use href="#klin"/></svg>Aktualna oferta</h2>
-      <p>Lokale i grunty w Koszalinie, bezpośrednio od właściciela. Każdy obiekt pokażemy na miejscu.</p>
+      <div><h2>Kontakt</h2><div class="linia"></div></div>
+      <p>Najszybciej telefonicznie. Chętnie umówimy oglądanie lokalu, biura albo działki.</p>
     </div>
-    <div class="karty3">
-      <article class="karta">
-        <div class="gal" data-gal>
-          <div class="gal-tor">
-            <img src="img/rynek-1.webp" alt="Lokal przy Rynku Staromiejskim w Koszalinie, witryna od strony rynku" loading="lazy">
-            <img src="img/rynek-2.webp" alt="Rynek Staromiejski w Koszalinie, widok na budynek z lokalem" loading="lazy">
+    <div class="kontakt">
+      <div>
+        <address class="adr">
+          <h3>Biuro deweloperskie</h3>
+          <p>ul. Zwycięstwa 28/7, 75-037 Koszalin</p>
+          <p>tel. <a href="tel:+48943480868">94 348 08 68</a></p>
+          <p>faks 94 348 08 67</p>
+          <p><a href="mailto:sak@sak.com.pl">sak@sak.com.pl</a></p>
+          <div class="druga">
+            <p><b>Meduza*** Hotel Restauracja</b></p>
+            <p>ul. Nadbrzeżna 2, 76-032 Mielno</p>
+            <p>tel. <a href="tel:+48943480890">94 348 08 90</a></p>
           </div>
+        </address>
+        <div class="mapa" id="mapa" data-src="https://maps.google.com/maps?q=Zwyci%C4%99stwa+28,+75-037+Koszalin&amp;z=16&amp;output=embed" aria-label="Mapa: ul. Zwycięstwa 28, Koszalin"></div>
+      </div>
+      <form id="form" novalidate>
+        <h3>Zapytanie o ofertę</h3>
+        <div class="dwa">
+          <div class="pole"><label for="f-imie">Imię i nazwisko</label><input id="f-imie" name="imie" autocomplete="name"></div>
+          <div class="pole"><label for="f-kontakt">Telefon lub e-mail</label><input id="f-kontakt" name="kontakt" autocomplete="tel"></div>
         </div>
-        <div class="karta-in">
-          <h3>Lokal przy Rynku Staromiejskim</h3>
-          <p class="miejsce"><svg><use href="#i-pin"/></svg>Koszalin, ścisłe centrum, obok Ratusza</p>
-          <dl class="param">
-            <div><dt>Powierzchnia</dt><dd>180 m² + piwnice 150 m²</dd></div>
-            <div><dt>Wynajem</dt><dd>13 500 zł / mies.</dd></div>
-            <div><dt>Sprzedaż</dt><dd>2 520 000 zł</dd></div>
-          </dl>
-          <p>Po banku: sejf, podjazd dla wózków, przystanek i parking przy budynku. Wolny od zaraz.</p>
-          <a class="btn btn-obr" href="#kontakt" data-temat="Lokal przy Rynku Staromiejskim">Zapytaj o ten lokal</a>
+        <div class="pole"><label for="f-temat">Czego dotyczy</label>
+          <select id="f-temat" name="temat">
+            <option>Lokal przy Rynku Staromiejskim</option>
+            <option>Biura przy ul. Zwycięstwa 28</option>
+            <option>Działka przy ul. Gnieźnieńskiej</option>
+            <option>Grunt do sprzedania</option>
+            <option>Inna sprawa</option>
+          </select>
         </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal>
-          <div class="gal-tor">
-            <img src="img/zw-ulica.webp" alt="Budynek biurowy przy ul. Zwycięstwa 28 w Koszalinie" loading="lazy">
-            <img src="img/zw-detal.webp" alt="Kamienna elewacja budynku przy ul. Zwycięstwa 28" loading="lazy">
-            <img src="img/zw-tyl.webp" alt="Tylna elewacja budynku przy ul. Zwycięstwa 28 z tarasami" loading="lazy">
-          </div>
-        </div>
-        <div class="karta-in">
-          <h3>Biura przy ul. Zwycięstwa 28</h3>
-          <p class="miejsce"><svg><use href="#i-pin"/></svg>Koszalin, główna ulica miasta</p>
-          <dl class="param">
-            <div><dt>III piętro</dt><dd>115 m² z tarasem · 3 910 zł</dd></div>
-            <div><dt>II piętro</dt><dd>88 m² · 2 992 zł</dd></div>
-            <div><dt>Stawka</dt><dd>34 zł / m²</dd></div>
-          </dl>
-          <p>Nowy budynek z windą i dwoma wejściami, na parterze bank. W tym budynku mieści się też nasze biuro.</p>
-          <a class="btn btn-obr" href="#kontakt" data-temat="Biura przy ul. Zwycięstwa 28">Zapytaj o biuro</a>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="mapa-karta">
-          <iframe title="Mapa: ul. Gnieźnieńska w Koszalinie" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=ul.%20Gnie%C5%BAnie%C5%84ska%2C%20Koszalin&amp;t=m&amp;z=14&amp;hl=pl&amp;output=embed"></iframe>
-        </div>
-        <div class="karta-in">
-          <h3>Działka pod inwestycję</h3>
-          <p class="miejsce"><svg><use href="#i-pin"/></svg>Koszalin, ul. Gnieźnieńska (trasa na Poznań)</p>
-          <dl class="param">
-            <div><dt>Powierzchnia</dt><dd>1 100 m²</dd></div>
-            <div><dt>Cena</dt><dd>290 000 zł</dd></div>
-            <div><dt>Przeznaczenie</dt><dd>działalność gospodarcza</dd></div>
-          </dl>
-          <p>Przy CH Forum, w sąsiedztwie salonu Toyoty, warsztatu Volvo i hal sklepu meblowego.</p>
-          <a class="btn btn-obr" href="#kontakt" data-temat="Działka przy ul. Gnieźnieńskiej">Zapytaj o działkę</a>
-        </div>
-      </article>
+        <div class="pole"><label for="f-wiad">Wiadomość</label><textarea id="f-wiad" name="wiadomosc" placeholder="Na przykład: termin oglądania"></textarea></div>
+        <button class="btn" type="submit">Wyślij zapytanie</button>
+        <p class="info" id="info" role="status"></p>
+      </form>
     </div>
-  </div>
-</section>
-
-<section class="sek ciemna" id="zwyciestwa" aria-labelledby="h-zw">
-  <div class="wrap zw">
-    <div class="zw-txt">
-      <h2 id="h-zw"><svg class="znak"><use href="#klin"/></svg>Jak nowe wpisuje się w ulicę</h2>
-      <p>Kamienicy przy Zwycięstwa, w której działała kiedyś restauracja Bałtyk, nie dało się już wyremontować. Rozebraliśmy ją i postawiliśmy w tym miejscu nowy budynek.</p>
-      <p>Nowoczesny w środku, a z zewnątrz w zgodzie z sąsiednimi kamienicami: kamienna elewacja, witryna na całą szerokość parteru, winda KONE, biura na piętrach.</p>
-      <blockquote>„Dokładamy wszelkich starań, aby nasze inwestycje były nowoczesne na miarę Europy, funkcjonalne, stylowe i eleganckie oraz dobrze wkomponowane w otoczenie.”</blockquote>
-      <p class="przesun" aria-hidden="true">Przesuń zdjęcia, żeby zobaczyć kolejne etapy</p>
-    </div>
-    <div class="etapy" data-tor>
-      <figure><img src="img/zw-rozbiorka.webp" alt="Rozbiórka starej kamienicy przy ul. Zwycięstwa, marzec 2007" loading="lazy"><figcaption><b>Marzec 2007</b> rozbiórka starej kamienicy</figcaption></figure>
-      <figure><img src="img/zw-budowa.webp" alt="Budowa nowego budynku przy ul. Zwycięstwa, 2008" loading="lazy"><figcaption><b>Luty 2008</b> nowa bryła w linii pierzei</figcaption></figure>
-      <figure><img src="img/zw-wnetrze.webp" alt="Prace wykończeniowe wewnątrz budynku przy ul. Zwycięstwa" loading="lazy"><figcaption><b>Czerwiec 2008</b> prace wykończeniowe</figcaption></figure>
-      <figure><img src="img/zw-front.webp" alt="Gotowy budynek przy ul. Zwycięstwa 28 w Koszalinie" loading="lazy"><figcaption><b>Dziś</b> lokal handlowy i biura na wynajem</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="sek blekit" id="realizacje" aria-labelledby="h-real">
-  <div class="wrap">
-    <div class="glowa">
-      <h2 id="h-real"><svg class="znak"><use href="#klin"/></svg>Zrealizowane inwestycje</h2>
-      <p>Obiekty, które można zobaczyć na żywo w Mielnie i Koszalinie. Zdjęcia w kartach przesuwa się palcem lub myszą.</p>
-    </div>
-    <div class="karty3 real">
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/meduza-2.webp" alt="Hotel Meduza w Mielnie, elewacja od ulicy" loading="lazy">
-          <img src="img/meduza-3.webp" alt="Hotel Meduza, detal elewacji z kwiatami" loading="lazy">
-          <img src="img/meduza-noc.webp" alt="Wejście do restauracji Meduza wieczorem" loading="lazy">
-          <img src="img/meduza-4.webp" alt="Hotel Meduza w Mielnie, widok z ulicy" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>Meduza*** Hotel Restauracja</h3>
-          <p class="lata">Mielno · remont 1997</p>
-          <p>Zabytkowy budynek z początku XX wieku w stylu szwajcarskiego renesansu. Zachowaliśmy bryłę i zamieniliśmy go w hotel z restauracją.</p>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/basen-1.webp" alt="Kryty basen w hotelu Meduza" loading="lazy">
-          <img src="img/basen-2.webp" alt="Basen w hotelu Meduza, widok z góry" loading="lazy">
-          <img src="img/basen-wykop.webp" alt="Wykop pod basen przy hotelu Meduza, 2006" loading="lazy">
-          <img src="img/basen-sciany.webp" alt="Budowa ścian basenu poniżej poziomu morza" loading="lazy">
-          <img src="img/basen-tech.webp" alt="Technika basenowa w podbaseniu" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>Basen w hotelu Meduza</h3>
-          <p class="lata">Mielno · 2005-2007</p>
-          <p>Basen poniżej poziomu morza pod hotelem stojącym na wydmach. Grunt wzmocniono iniekcją strumieniową według rozwiązania firmy Keller Polska.</p>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/swietlik-1.webp" alt="Ogród zimowy pod przeszklonym dachem w hotelu Meduza" loading="lazy">
-          <img src="img/swietlik-2.webp" alt="Dziedziniec hotelu Meduza pod świetlikiem" loading="lazy">
-          <img src="img/swietlik-konstr.webp" alt="Stalowa konstrukcja świetlika w trakcie budowy" loading="lazy">
-          <img src="img/swietlik-konstr2.webp" alt="Montaż przeszklenia świetlika nad dziedzińcem" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>Ogród zimowy nad basenem</h3>
-          <p class="lata">Mielno · 2006-2007</p>
-          <p>Odkryty dziedziniec, czynny tylko w sezonie, dostał przeszklony dach na dużej powierzchni, bez dodatkowych słupów.</p>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/nadbrzezna-1.webp" alt="Budynek apartamentowy przy ul. Nadbrzeżnej w Mielnie" loading="lazy">
-          <img src="img/nadbrzezna-2.webp" alt="Apartamentowiec przy ul. Nadbrzeżnej, widok z placu" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>Apartamentowiec przy Nadbrzeżnej</h3>
-          <p class="lata">Mielno · 2000-2001</p>
-          <p>Budynek o nietuzinkowej architekturze. W 2001 roku zajął 1. miejsce i zdobył tytuł „Mister Roku 2001”.</p>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/zachod-1.webp" alt="Apartamentowiec Zachód Słońca w Mielnie" loading="lazy">
-          <img src="img/zachod-3.webp" alt="Zachód Słońca, narożnik budynku" loading="lazy">
-          <img src="img/zachod-5.webp" alt="Zachód Słońca od strony promenady" loading="lazy">
-          <img src="img/zachod-zima.webp" alt="Zachód Słońca zimą, widok od strony plaży" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>„Zachód Słońca”</h3>
-          <p class="lata">Mielno, przy promenadzie · 2004-2006</p>
-          <p>Nowoczesny apartamentowiec z elewacją nawiązującą do starych kamienic, zaprojektowany razem z architektami.</p>
-        </div>
-      </article>
-      <article class="karta">
-        <div class="gal" data-gal><div class="gal-tor">
-          <img src="img/textilia-1.webp" alt="Hala Sak Textilia w Koszalinie, przeszklona część biurowa" loading="lazy">
-          <img src="img/textilia-2.webp" alt="Hala Sak Textilia, widok od drogi" loading="lazy">
-          <img src="img/textilia-3.webp" alt="Hala magazynowa Sak Textilia z boku" loading="lazy">
-        </div></div>
-        <div class="karta-in">
-          <h3>Hala Sak Textilia</h3>
-          <p class="lata">Koszalin, trasa na Poznań · 1995</p>
-          <p>Hala magazynowa wysokiego składowania z częścią biurową, łącznie 1 100 m². Konstrukcja stalowo-murowana.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sek" id="o-firmie" aria-labelledby="h-o">
-  <div class="wrap o">
-    <figure class="o-foto"><img src="img/swietlik-2.webp" alt="Dziedziniec hotelu Meduza w Mielnie pod przeszklonym dachem" loading="lazy"></figure>
-    <div class="o-txt">
-      <h2 id="h-o"><svg class="znak"><use href="#klin"/></svg>O firmie</h2>
-      <p>Sak Sp. z o.o. działa od 1992 roku. Siedziba spółki jest w Mielnie przy ul. Nadbrzeżnej 2, a biuro zarządu w Koszalinie przy ul. Zwycięstwa 28, w naszej najnowszej inwestycji.</p>
-      <p>Budujemy lokale i mieszkania na wynajem i sprzedaż, odnawiamy obiekty zabytkowe oraz szukamy i kupujemy grunty pod kolejne inwestycje. Pracujemy na miejscu: w Koszalinie i nad morzem w Mielnie.</p>
-      <ul class="kreski">
-        <li>budowa na wynajem i sprzedaż</li>
-        <li>renowacja obiektów zabytkowych</li>
-        <li>zakup gruntów inwestycyjnych</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="sek szklo" aria-labelledby="h-szklo">
-  <div class="wrap szklo-in">
-    <img src="img/szklo.webp" alt="Kieliszki Helicium projektu Arnaud Baratte" loading="lazy" width="400" height="270">
-    <div>
-      <h2 id="h-szklo">Także: szkło do wina Helicium<sup>®</sup></h2>
-      <p>Kieliszki do wina, szampana i mocnych trunków projektu Arnaud Baratte'a, wykonane w całości we Francji, odporne na uderzenia i mycie w zmywarce. Docelowo osobna podstrona z pełną ofertą.</p>
-      <a class="lnk" href="tel:+48606646105">Zamówienia: 606 646 105</a>
-    </div>
-  </div>
-</section>
-
-<section class="sek blekit" id="kontakt" aria-labelledby="h-kontakt">
-  <div class="wrap kontakt">
-    <div class="k-dane">
-      <h2 id="h-kontakt"><svg class="znak"><use href="#klin"/></svg>Kontakt</h2>
-      <p>Najszybciej telefonicznie. Chętnie pokażemy lokal lub biuro na miejscu.</p>
-      <ul class="k-lista">
-        <li><svg><use href="#i-tel"/></svg><a href="tel:+48943480868">94 348 08 68</a></li>
-        <li><svg><use href="#i-mail"/></svg><a href="mailto:sak@sak.com.pl">sak@sak.com.pl</a></li>
-        <li><svg><use href="#i-pin"/></svg><span>Biuro deweloperskie<br>ul. Zwycięstwa 28/7, 75-037 Koszalin</span></li>
-        <li><svg><use href="#i-pin"/></svg><span>Siedziba spółki<br>ul. Nadbrzeżna 2, 76-032 Mielno</span></li>
-      </ul>
-    </div>
-    <form class="form" id="form" novalidate>
-      <label>Imię i nazwisko<input name="imie" autocomplete="name" required></label>
-      <label>Telefon lub e-mail<input name="kontakt" autocomplete="tel" required></label>
-      <label>Dotyczy
-        <select name="temat" id="temat">
-          <option>Lokal przy Rynku Staromiejskim</option>
-          <option>Biura przy ul. Zwycięstwa 28</option>
-          <option>Działka przy ul. Gnieźnieńskiej</option>
-          <option>Inna sprawa</option>
-        </select>
-      </label>
-      <label>Wiadomość<textarea name="wiad" rows="4" placeholder="Np. kiedy można obejrzeć lokal?"></textarea></label>
-      <button class="btn" type="submit">Wyślij zapytanie</button>
-      <p class="form-info" id="formInfo" role="status"></p>
-    </form>
-  </div>
-  <div class="mapa">
-    <iframe title="Mapa: biuro Sak, ul. Zwycięstwa 28, Koszalin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Zwyci%C4%99stwa%2028%2C%2075-037%20Koszalin&amp;t=m&amp;z=16&amp;hl=pl&amp;output=embed"></iframe>
   </div>
 </section>
 </main>
 
-<footer class="stopka">
-  <div class="wrap stopka-in">
-    <div class="st-1">
-      <svg class="znak"><use href="#klin"/></svg>
-      <p><b>Sak Sp. z o.o.</b><br>ul. Zwycięstwa 28/7<br>75-037 Koszalin</p>
+<footer>
+  <div class="wrap">
+    <div class="st">
+      <div class="pierwsza">
+        <a class="logo" href="#" aria-label="SAK Sp. z o.o."><svg viewBox="150 40 625 210" style="color:#fff"><use href="#sak"/></svg></a>
+        <p style="margin-top:14px">SAK Sp. z o.o., od 1992 roku.<br>Koszalin i Mielno.</p>
+      </div>
+      <div>
+        <h4>Biuro deweloperskie</h4>
+        <p>ul. Zwycięstwa 28/7<br>75-037 Koszalin</p>
+        <p><a href="tel:+48943480868">94 348 08 68</a></p>
+        <p><a href="mailto:sak@sak.com.pl">sak@sak.com.pl</a></p>
+      </div>
+      <div class="nawig">
+        <h4>Strona</h4>
+        <ul><li><a href="#oferta">Aktualna oferta</a></li><li><a href="#inwestycje">Inwestycje</a></li><li><a href="#jak-budujemy">Jak budujemy</a></li><li><a href="#o-firmie">O firmie</a></li><li><a href="#kontakt">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h4>Hotel Meduza***</h4>
+        <p>ul. Nadbrzeżna 2<br>76-032 Mielno</p>
+        <p><a href="tel:+48943480890">94 348 08 90</a></p>
+      </div>
     </div>
-    <div class="st-2">
-      <p><a href="tel:+48943480868">94 348 08 68</a><br><a href="mailto:sak@sak.com.pl">sak@sak.com.pl</a></p>
-    </div>
-    <div class="st-3">
-      <span>© <span id="rok">2026</span> Sak Sp. z o.o. · Polityka prywatności</span>
+    <div class="dol">
+      <span>© <span id="rok">2026</span> SAK Sp. z o.o. Podgląd koncepcji, treści i zdjęcia z sak.com.pl.</span>
       <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=sak.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
     </div>
   </div>
 </footer>
 
-<div class="mob" id="mob" aria-hidden="true">
-  <a href="tel:+48943480868" class="mob-tel"><svg><use href="#i-tel"/></svg>Zadzwoń</a>
-  <a href="#kontakt" class="mob-cta">Zapytaj o lokal</a>
-</div>
+<nav class="mob" id="mob" aria-label="Szybki kontakt">
+  <a href="tel:+48943480868"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Zadzwoń</a>
+  <a href="#oferta">Aktualna oferta</a>
+</nav>
 
 <script src="app.js" defer></script>
 </body>
